@@ -7,6 +7,11 @@
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg/__init__.py
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg/dummy_module.py
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/dummy_script.py
+/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/mode_service.py
+/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/check.py
+/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/random_target.py
+/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/jointstate.py
+/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/teleoperation.py
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/cpp_node_test
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/config/display.rviz
 /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/launch/simple_display.launch.py

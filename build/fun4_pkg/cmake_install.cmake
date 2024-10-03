@@ -67,7 +67,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fun4_pkg" TYPE PROGRAM FILES "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/dummy_script.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fun4_pkg" TYPE PROGRAM FILES
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/dummy_script.py"
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/mode_service.py"
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/check.py"
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/random_target.py"
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/jointstate.py"
+    "/home/itoon/Documents/GitHub/Fun4_RoboticDev/src/RoboticsDev2024/scripts/teleoperation.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

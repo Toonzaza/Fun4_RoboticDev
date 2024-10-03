@@ -1,0 +1,1 @@
+Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/itoon/Documents/GitHub/Fun4_RoboticDev/src/fun4_interfaces -DCMAKE_INSTALL_PREFIX=/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_interfaces

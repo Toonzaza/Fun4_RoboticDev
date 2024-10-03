@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from fun4_interfaces/srv/Mode.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/String.idl"
+
+module fun4_interfaces {
+  module srv {
+    struct Mode_Request {
+      int64 mode;
+
+      double x;
+
+      double y;
+
+      double z;
+    };
+    struct Mode_Response {
+      std_msgs::msg::String state;
+    };
+  };
+};

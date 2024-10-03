@@ -54,6 +54,46 @@ def generate_launch_description():
     #     executable='random.py'
     # )
     launch_description = LaunchDescription()
+
+    mode_service = Node(
+        package='fun4_pkg',
+        namespace='mode',
+        executable='mode_service.py',
+        name='mode_service'
+    )
+    launch_description.add_action(mode_service)
+
+    random_target = Node(
+        package='fun4_pkg',
+        namespace='random_target',
+        executable='random_target.py',
+        name='random_target'
+    )
+    launch_description.add_action(random_target)
+
+    check = Node(
+        package='fun4_pkg',
+        namespace='check_target',
+        executable='check.py',
+        name='check_target'
+    )
+    launch_description.add_action(check)
+
+    Teleop = Node(
+        package='fun4_pkg',
+        namespace='teleop',
+        executable='teleoperation.py',
+        name='teleop'
+    )
+    launch_description.add_action(Teleop)
+
+    Jointstate= Node(
+        package='fun4_pkg',
+        namespace='jointstate',
+        executable='jointstate.py',
+        name='jointstate'
+    )
+    launch_description.add_action(Jointstate)
     
     launch_description.add_action(rviz)
     launch_description.add_action(robot_state_publisher)

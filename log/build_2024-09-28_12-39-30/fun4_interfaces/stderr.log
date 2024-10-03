@@ -1,0 +1,32 @@
+In file included from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.h:19[m[K,
+                 from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c:4[m[K:
+[01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/mode__struct.h:44:10:[m[K [01;31m[Kfatal error: [m[Kstd_msg/msg/detail/string__struct.h: No such file or directory
+   44 | #include [01;31m[K"std_msg/msg/detail/string__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/build.make:165: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_typesupport_cpp/fun4_interfaces/srv/mode__type_support.cpp:7[m[K:
+[01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp:176:10:[m[K [01;31m[Kfatal error: [m[Kstd_msg/msg/detail/string__struct.hpp: No such file or directory
+  176 | #include [01;31m[K"std_msg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/fun4_interfaces__rosidl_typesupport_cpp.dir/build.make:146: CMakeFiles/fun4_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fun4_interfaces/srv/mode__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/fun4_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_typesupport_fastrtps_cpp/fun4_interfaces/srv/detail/mode__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_typesupport_fastrtps_cpp/fun4_interfaces/srv/detail/dds_fastrtps/mode__type_support.cpp:4[m[K:
+[01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp:176:10:[m[K [01;31m[Kfatal error: [m[Kstd_msg/msg/detail/string__struct.hpp: No such file or directory
+  176 | #include [01;31m[K"std_msg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/fun4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:151: CMakeFiles/fun4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fun4_interfaces/srv/detail/dds_fastrtps/mode__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/fun4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+In file included from [01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_typesupport_introspection_cpp/fun4_interfaces/srv/detail/mode__type_support.cpp:12[m[K:
+[01m[K/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp:176:10:[m[K [01;31m[Kfatal error: [m[Kstd_msg/msg/detail/string__struct.hpp: No such file or directory
+  176 | #include [01;31m[K"std_msg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:151: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fun4_interfaces/srv/detail/mode__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,57 @@
+[0.013s] Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces -- -j20 -l20
+[0.028s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.105s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.150s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.162s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.164s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.166s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.194s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.295s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.295s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.295s]   fun4_interfaces --arguments-file
+[0.295s]   /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_adapter__arguments__fun4_interfaces.json
+[0.295s]   --output-dir
+[0.295s]   /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_adapter/fun4_interfaces
+[0.295s]   --output-file
+[0.295s]   /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/rosidl_adapter/fun4_interfaces.idls)
+[0.295s]   returned error code 1:
+[0.295s] 
+[0.295s]   Error processing 'int64 Mode' of 'fun4_interfaces/Mode_Request': ''Mode' is
+[0.295s]   an invalid field name.  It should have the pattern
+[0.295s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.295s] 
+[0.295s]   Traceback (most recent call last):
+[0.295s] 
+[0.295s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.295s]       return _run_code(code, main_globals, None,
+[0.295s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.295s]       exec(code, run_globals)
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.295s]       sys.exit(main())
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.295s]       abs_idl_file = convert_to_idl(
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.295s]       return convert_srv_to_idl(
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.295s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string
+[0.295s]       request_message = parse_message_string(
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[0.295s]       fields.append(Field(
+[0.295s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[0.295s]       raise NameError(
+[0.295s] 
+[0.295s]   NameError: 'Mode' is an invalid field name.  It should have the pattern
+[0.295s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.295s] 
+[0.296s] Call Stack (most recent call first):
+[0.296s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.296s]   CMakeLists.txt:29 (rosidl_generate_interfaces)
+[0.296s] 
+[0.296s] [0m
+[0.296s] -- Configuring incomplete, errors occurred!
+[0.296s] See also "/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces/CMakeFiles/CMakeOutput.log".
+[0.298s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.300s] Invoked command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_interfaces -- -j20 -l20
