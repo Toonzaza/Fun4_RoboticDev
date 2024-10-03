@@ -108,7 +108,7 @@ If answer not in taskspace.
 
 2. Teleoperation
 
-If you want to play this mode you must open new terminal and run this command
+If you want to play this mode you must open new terminal and run this command.
 
         ros2 run teleop_twist_keyboard teleop_twist_keyboard 
 
@@ -130,5 +130,15 @@ Reference Base
 
 And if while ordering the robot It then detects that the robot is approaching the Singularity condition.
 
+![image](https://media.discordapp.net/attachments/1281153207296327754/1291471619406958742/image.png?ex=6700382c&is=66fee6ac&hm=3683b1339b1c852c52cc584b56af9cfd241f6d8e6310249b5e123afedc9cf556&=&format=webp&quality=lossless&width=2462&height=597)
 
 
+3. Auto
+
+If you want to play this mode you must run this command.
+
+
+        ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 3
+        x: 0.0
+        y: 0.0
+        z: 0.0" 
