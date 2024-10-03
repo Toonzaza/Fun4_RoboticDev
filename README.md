@@ -24,3 +24,9 @@ To run this project, ensure you have the following installed:
 - [**RVIZ2**](https://docs.ros.org/en/humble/Tutorials/Intermediate/RViz/RViz-Main.html)
 - [**geometry2 tf2_ros**](https://github.com/ros2/geometry2)
 - [**robot_state_publisher package**](https://github.com/ros/robot_state_publisher)
+
+## System Architecture
+![image](https://media.discordapp.net/attachments/1281153207296327754/1291333087606603807/image.png?ex=66ffb727&is=66fe65a7&hm=c6ca543ee7bd96b8a27e4fc71bc47357ad2b3571ff5c87ce20bcf2c42edec5bb&=&format=webp&quality=lossless&width=2391&height=1106)
+
+## Installation
+
