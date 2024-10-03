@@ -15,7 +15,7 @@ class JointstateNode(Node):
     def __init__(self):
         super().__init__('jointstate_node')
         self.joint_pub = self.create_publisher(JointState, "/joint_states", 10)
-        self.toggle_publisher = self.create_publisher(Int64, '/toggle_mode', 10)
+        # self.toggle_publisher = self.create_publisher(Int64, '/toggle_mode', 10)
         self.create_subscription(Int64, '/toggle_mode', self.toggle_callback, 10)
         self.create_subscription(Twist,'/cmd_vel', self.cmd_vel_callback,10)
 

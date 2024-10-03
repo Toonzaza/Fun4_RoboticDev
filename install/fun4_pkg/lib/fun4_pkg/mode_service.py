@@ -18,7 +18,6 @@ class ModeService(Node):
     def mode_callback(self, request, response):
 
         state_msg = String()
-        # คำนวณตาม mode ที่รับมา
         if request.mode == 1:
             msg = Int64()
             msg.data = 1
