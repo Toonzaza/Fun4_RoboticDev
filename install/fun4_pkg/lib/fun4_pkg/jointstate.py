@@ -26,7 +26,7 @@ class JointstateNode(Node):
         self.init_q = [0.0, 0.0, 0.0]
         self.q = [0.0, 0.0, 0.0]
         self.kp = 1
-        self.can_do = False  # ใช้ควบคุมให้หยุดคำนวณเมื่อถึงเป้าหมาย
+        self.can_do = False  
         self.count = 0
         self.mode = 0
         self.must_do = False
@@ -71,13 +71,11 @@ class JointstateNode(Node):
 
     def sim_loop(self):
         if self.must_do:
-            if self.can_do:  # ตรวจสอบว่าให้คำนวณได้หรือไม่
-                p_0e = self.robot_description().fkine(self.init_q).t[:3]  # ตำแหน่งปัจจุบัน
+            if self.can_do: 
+                p_0e = self.robot_description().fkine(self.init_q).t[:3]  
 
-                error = np.array(self.target_position) - p_0e  # ข้อผิดพลาดระหว่างตำแหน่งเป้าหมายกับตำแหน่งปัจจุบัน
+                error = np.array(self.target_position) - p_0e  
                 self.get_logger().info(f"Error: {error}")
-
-                # ตรวจสอบว่า error น้อยกว่าค่าที่กำหนด (0.01) ในทุกแกนเพื่อหยุดการเคลื่อนไหว
 
                 # คำนวณ Jacobian และการเปลี่ยนแปลงมุมข้อต่อ (q_dot)
                 matrix_3x6 = self.robot_description().jacob0(self.init_q)
@@ -88,21 +86,19 @@ class JointstateNode(Node):
 
                 if np.linalg.norm(error < 0.01) and self.can_do : 
                     self.get_logger().info("Target reached, stopping movement.")
-                    self.can_do = False  # หยุดการคำนวณเมื่อถึงตำแหน่งเป้าหมาย
+                    self.can_do = False  
                     if self.mode == 3:
                         msg = Int64()
                         msg.data = 3
                         self.toggle_publisher.publish(msg)
                         self.mode = 0  
 
-
-
                 # ส่งค่า JointState ที่อัพเดตแล้วไปยัง ROS
                 self.msg = JointState()
                 for i in range(len(q_dot)):
                     self.q[i] += q_dot[i] * (1 / self.freq)
-                    self.msg.position.append(self.q[i])  # เพิ่มค่ามุมข้อต่อ
-                    self.msg.name.append(self.name[i])  # ชื่อข้อต่อ
+                    self.msg.position.append(self.q[i])  
+                    self.msg.name.append(self.name[i]) 
                 
                 self.msg.header.stamp = self.get_clock().now().to_msg()
                 self.joint_pub.publish(self.msg)

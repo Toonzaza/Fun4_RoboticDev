@@ -21,7 +21,7 @@ class Random(Node):
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = "link_0"
 
-        # สุ่มค่าตำแหน่ง x, y, z ภายในช่วงที่กำหนด
+        # สุ่มค่าตำแหน่ง x, y, z
         position = self.generate_random_position()
 
         msg.pose.position.x = position[0]
@@ -40,9 +40,9 @@ class Random(Node):
         r_min = 0.03
         r_max = 0.530
 
-        x = np.random.uniform(r_min, r_max)
-        y = np.random.uniform(r_min, r_max)
-        z = np.random.uniform(r_min, r_max)
+        x = np.random.uniform(-r_max, r_max)
+        y = np.random.uniform(-r_max, r_max)
+        z = np.random.uniform(-r_max, r_max)
         return [x, y, z]
 
 def main(args=None):

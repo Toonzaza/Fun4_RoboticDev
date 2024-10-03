@@ -15,7 +15,6 @@ class JointstateNode(Node):
     def __init__(self):
         super().__init__('jointstate_node')
         self.joint_pub = self.create_publisher(JointState, "/joint_states", 10)
-        # self.create_subscription(PoseStamped, '/target', self.target_callback, 10)
         self.toggle_publisher = self.create_publisher(Int64, '/toggle_mode', 10)
         self.create_subscription(Int64, '/toggle_mode', self.toggle_callback, 10)
         self.create_subscription(Twist,'/cmd_vel', self.cmd_vel_callback,10)
@@ -28,7 +27,7 @@ class JointstateNode(Node):
         self.init_q = [0.0, 0.0, 0.0]
         self.q = [0.0, 0.0, 0.0]
         self.kp = 1
-        self.must_do = False  # ใช้ควบคุมให้หยุดคำนวณเมื่อถึงเป้าหมาย
+        self.must_do = False  
         self.count = 0
         self.mode = 0
         self.p_dot = [0.0, 0.0, 0.0]
@@ -95,13 +94,6 @@ class JointstateNode(Node):
         if abs(self.det_J) < self.det_threshold:
             self.get_logger().info(f"Near a singularity")
             self.p_dot = [0.0, 0.0, 0.0]
-            
-            
-
-
-        # if manipulability == 0:
-        #     self.get_logger().info(f"Near a singularity")
-        #     return
 
 
         if self.must_do:
@@ -116,12 +108,6 @@ class JointstateNode(Node):
 
                 self.msg.header.stamp = self.get_clock().now().to_msg()
                 self.joint_pub.publish(self.msg)
-                
-                if manipulability > self.singularity_thres and manipulability != 0.0:
-                    # self.msg = JointState()
-                    self.q = [0.0, 0.0, 0.0]
-                    self.joint_pub.publish(self.msg)
-                    self.get_logger().info(f"Near a singularity")
 
             elif self.mode == 2:
                 q_dot = np.linalg.pinv(matrix_3x3).dot(r_0e @ self.p_dot)
@@ -134,23 +120,10 @@ class JointstateNode(Node):
 
                 self.msg.header.stamp = self.get_clock().now().to_msg()
                 self.joint_pub.publish(self.msg)
-                # if manipulability == 0.0:
-                #     # # self.msg = JointState()
-                #     # self.q = [0.0, 0.0, 0.0]
-                #     # self.joint_pub.publish(self.msg)
-                #     self.get_logger().info(f"Near a singularity")
-                #     return
 
 def main(args=None):
     rclpy.init(args=args)
     node = JointstateNode()
-
-    # msg = JointState()
-    # msg.position = [0.0, 0.0, 0.0]
-    # msg.header.stamp = node.get_clock().now().to_msg()
-    # msg.name = ["joint_1", "joint_2", "joint_3"]
-    # node.joint_pub.publish(msg)
-
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

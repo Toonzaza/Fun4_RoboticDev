@@ -19,7 +19,7 @@ class Check_Node(Node):
         self.y = 0.0
         self.z = 0.0
         self.mode = 0
-        self.current_mode = None  # เก็บค่า toggle mode ปัจจุบัน
+        self.current_mode = None  
 
     
     def toggle_callback(self,msg:Int64):
