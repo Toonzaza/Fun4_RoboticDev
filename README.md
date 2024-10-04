@@ -39,13 +39,14 @@ Install & upgrade **python3-pip**.
 Install Robotics Toolbox for Python using pip3.
 
     pip3 install roboticstoolbox-python
+    
 For use Robotics Toolbox for Python have to use numpy < 1.25.0
 
     pip3 install numpy==1.24.4
     
 Clone this workspace in to your terminal.
 
-     git clone https://github.com/Toonzaza/Fun4_RoboticDev.git
+    git clone https://github.com/Toonzaza/Fun4_RoboticDev.git
 
 Go to the project directory.
 
@@ -78,6 +79,8 @@ You can see position of target and position of end-effector in this picture.
 
 Custom service
 
+    ## Don't coppy this code. ##
+
     Name : /set_mode
     
     Request : mode --> Enter mode 1-3.
@@ -103,9 +106,11 @@ For IPK you must open new terminal and enter mode: 1 and enter qx qy qz in x y z
 
 If you find the answer in taskspace.
 
-![image](https://media.discordapp.net/attachments/1281153207296327754/1291465889253953556/image.png?ex=670032d6&is=66fee156&hm=e2e8d05ad3eef4e71f6cc1f9d13eadcf833ee3b0433ca556d52cd99df0fa581b&=&format=webp&quality=lossless&width=2462&height=622)
+![image](https://media.discordapp.net/attachments/1281153207296327754/1291729423548158045/image.png?ex=67012845&is=66ffd6c5&hm=99996b579f296cf39bfc664a78dc645c6e1a408c0d181de5d8ee3695017aef57&=&format=webp&quality=lossless&width=2462&height=651)
 
 If answer not in taskspace.
+
+![image](https://media.discordapp.net/attachments/1281153207296327754/1291729574161551370/image.png?ex=67012869&is=66ffd6e9&hm=2df04d845cf3f1ac892fa0f215ca61ec2dd53da56dc2d6419d20c8a97590e8ef&=&format=webp&quality=lossless&width=2462&height=571)
 
 2. Teleoperation
 
@@ -143,3 +148,7 @@ If you want to play this mode you must run this command.
     x: 0.0
     y: 0.0
     z: 0.0" 
+
+## Recommendations
+
+If problems occur during use, you should exit and launch again.
