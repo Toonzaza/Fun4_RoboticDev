@@ -89,14 +89,16 @@ class JointstateNode(Node):
         self.J_pos = J_full[0:3, :]
         self.det_J = np.linalg.det(self.J_pos)
         self.det_threshold = 1e-5
-        self.get_logger().info(str(self.det_J))
+        # self.get_logger().info(str(self.det_J))
 
-        if abs(self.det_J) < self.det_threshold:
-            self.get_logger().info(f"Near a singularity")
-            self.p_dot = [0.0, 0.0, 0.0]
 
 
         if self.must_do:
+            
+            if abs(self.det_J) < self.det_threshold:
+                self.get_logger().info(f"Near a singularity")
+                self.p_dot = [0.0, 0.0, 0.0]
+            
             if self.mode == 1:
                 q_dot = np.linalg.pinv(matrix_3x3).dot(self.p_dot)
                 self.init_q += q_dot * 1/self.freq

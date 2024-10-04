@@ -18,14 +18,14 @@ class JointstateNode(Node):
         self.toggle_publisher = self.create_publisher(Int64, '/toggle_mode', 10)
         self.create_subscription(Int64, '/toggle_mode', self.toggle_callback, 10)
 
-        self.freq = 100.0
+        self.freq = 10.0
         self.create_timer(1.0/self.freq, self.sim_loop)
         self.name = ["joint_1", "joint_2", "joint_3"]
         self.current_position = [0.0, 0.0, 0.0]
         self.target_position = [0.0, 0.0, 0.0]
         self.init_q = [0.0, 0.0, 0.0]
         self.q = [0.0, 0.0, 0.0]
-        self.kp = 1
+        self.kp = 1.0
         self.can_do = False  
         self.count = 0
         self.mode = 0
@@ -34,6 +34,7 @@ class JointstateNode(Node):
     def toggle_callback(self,msg : Int64):
         if msg.data == 1:
             self.mode = 1
+            # self.get_logger().info("Toon")
             self.must_do = True
 
         elif msg.data == 3:
@@ -74,7 +75,7 @@ class JointstateNode(Node):
             if self.can_do: 
                 p_0e = self.robot_description().fkine(self.init_q).t[:3]  
 
-                error = np.array(self.target_position) - p_0e  
+                error = abs(np.array(self.target_position) - p_0e)  
                 self.get_logger().info(f"Error: {error}")
 
                 # คำนวณ Jacobian และการเปลี่ยนแปลงมุมข้อต่อ (q_dot)
@@ -82,9 +83,10 @@ class JointstateNode(Node):
                 matrix_3x3 = matrix_3x6[:3, :3]
                 
                 q_dot = np.linalg.pinv(matrix_3x3).dot(error)
-                self.init_q += q_dot * 1/self.freq  # อัปเดตมุมข้อต่อ
+                self.init_q += q_dot * 1/self.freq # อัปเดตมุมข้อต่อ
+                self.get_logger().info(str(self.init_q))
 
-                if np.linalg.norm(error < 0.01) and self.can_do : 
+                if np.linalg.norm(error < 0.05) and self.can_do : 
                     self.get_logger().info("Target reached, stopping movement.")
                     self.can_do = False  
                     if self.mode == 3:
