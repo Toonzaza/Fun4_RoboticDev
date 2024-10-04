@@ -1,0 +1,55 @@
+[0.011s] Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description -- -j20 -l20
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target cpp_node_test[0m
+[0.050s] [100%] Built target cpp_node_test
+[0.055s] [100%] Built target ament_cmake_python_copy_example_description
+[0.201s] running egg_info
+[0.201s] writing example_description.egg-info/PKG-INFO
+[0.201s] writing dependency_links to example_description.egg-info/dependency_links.txt
+[0.202s] writing top-level names to example_description.egg-info/top_level.txt
+[0.203s] reading manifest file 'example_description.egg-info/SOURCES.txt'
+[0.203s] writing manifest file 'example_description.egg-info/SOURCES.txt'
+[0.220s] [100%] Built target ament_cmake_python_build_example_description_egg
+[0.228s] Invoked command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description -- -j20 -l20
+[0.254s] Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description
+[0.260s] -- Install configuration: ""
+[0.260s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/pythonpath.sh
+[0.261s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/pythonpath.dsv
+[0.261s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description-0.0.0-py3.10.egg-info
+[0.261s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.261s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description-0.0.0-py3.10.egg-info/top_level.txt
+[0.261s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description-0.0.0-py3.10.egg-info/PKG-INFO
+[0.261s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.261s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description
+[0.261s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description/__init__.py
+[0.261s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description/dummy_module.py
+[0.284s] Listing '/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/local/lib/python3.10/dist-packages/example_description'...
+[0.285s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/lib/example_description/dummy_script.py
+[0.285s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/lib/example_description/cpp_node_test
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/config
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/launch
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes/link_0.stl
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes/end_effector.stl
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes/link_3.stl
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes/link_1.stl
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/meshes/link_2.stl
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/robot
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/robot/visual
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/robot/visual/my-robot.xacro
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/robot/visual/01-myfirst.urdf
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/ament_index/resource_index/package_run_dependencies/example_description
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/ament_index/resource_index/parent_prefix_path/example_description
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/ament_prefix_path.sh
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/ament_prefix_path.dsv
+[0.286s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/path.sh
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/environment/path.dsv
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/local_setup.bash
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/local_setup.sh
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/local_setup.zsh
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/local_setup.dsv
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/package.dsv
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/ament_index/resource_index/packages/example_description
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/cmake/example_descriptionConfig.cmake
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/cmake/example_descriptionConfig-version.cmake
+[0.287s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/example_description/share/example_description/package.xml
+[0.288s] Invoked command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/example_description
