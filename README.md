@@ -91,14 +91,15 @@ Custom service
 
 First you must run this command to open the launch file.
 
-        ros2 launch fun4_pkg fun.launch.py
+    ros2 launch example_description fun.launch.py 
+
 
 For IPK you must open new terminal and enter mode: 1 and enter qx qy qz in x y z.
 
-        ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 1
-        x: 0.0
-        y: 0.05
-        z: 0.3"
+    ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 1
+    x: 0.0
+    y: 0.05
+    z: 0.3"
 
 If you find the answer in taskspace.
 
@@ -110,23 +111,23 @@ If answer not in taskspace.
 
 If you want to play this mode you must open new terminal and run this command.
 
-        ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard 
 
 Commanding /cmd_vel in Teleoperation mode can be commanded in 2 modes:
 
 Reference End-effector
 
-        ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 2
-        x: 0.0
-        y: 0.0
-        z: 0.0" 
+    ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 2
+    x: 0.0
+    y: 0.0
+    z: 0.0" 
 
 Reference Base
 
-        ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 2
-        x: 1.0
-        y: 0.0
-        z: 0.0" 
+    ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 2
+    x: 1.0
+    y: 0.0
+    z: 0.0" 
 
 And if while ordering the robot It then detects that the robot is approaching the Singularity condition.
 
@@ -138,7 +139,7 @@ And if while ordering the robot It then detects that the robot is approaching th
 If you want to play this mode you must run this command.
 
 
-        ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 3
-        x: 0.0
-        y: 0.0
-        z: 0.0" 
+    ros2 service call /set_mode fun4_interfaces/srv/Mode "mode: 3
+    x: 0.0
+    y: 0.0
+    z: 0.0" 
