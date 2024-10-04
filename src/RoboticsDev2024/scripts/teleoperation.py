@@ -86,13 +86,11 @@ class JointstateNode(Node):
         matrix_3x3 = matrix_3x6[:3, :3]
         J_full = self.robot.jacob0(self.q)
         manipulability = np.linalg.det(J_full @ J_full.T)
-        # self.get_logger().info(f"Manipulability: {manipulability}")
         
         
         self.J_pos = J_full[0:3, :]
         self.det_J = np.linalg.det(self.J_pos)
         self.det_threshold = 1e-5
-        # self.get_logger().info(str(self.det_J))
 
 
 

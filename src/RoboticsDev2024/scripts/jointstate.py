@@ -77,12 +77,11 @@ class JointstateNode(Node):
                 error = (np.array(self.target_position) - p_0e) * self.kp
                 self.get_logger().info(f"Error: {error}")
 
-                # คำนวณ Jacobian และการเปลี่ยนแปลงมุมข้อต่อ (q_dot)
                 matrix_3x6 = self.robot_description().jacob0(self.init_q)
                 matrix_3x3 = matrix_3x6[:3, :3]
                 
                 q_dot = np.linalg.pinv(matrix_3x3).dot(error)
-                self.init_q += q_dot * 1/self.freq # อัปเดตมุมข้อต่อ
+                self.init_q += q_dot * 1/self.freq 
                 self.get_logger().info(str(self.init_q))
 
                 if np.linalg.norm(error < 0.001) and self.can_do : 
@@ -94,7 +93,6 @@ class JointstateNode(Node):
                         self.toggle_publisher.publish(msg)
                         self.mode = 0  
 
-                # ส่งค่า JointState ที่อัพเดตแล้วไปยัง ROS
                 self.msg = JointState()
                 for i in range(len(q_dot)):
                     self.q[i] += q_dot[i] * (1 / 100.0)

@@ -36,7 +36,7 @@ class Check_Node(Node):
             self.get_logger().info("Receiving IPK pose data...")
         elif msg.data == 3:
             self.get_logger().info("Receiving random pose data...")
-        self.current_mode = msg.data  # เก็บค่า mode ที่ได้รับ
+        self.current_mode = msg.data  
 
     def IPK_pose_callback(self, msg: PoseStamped):
         if self.current_mode == 1:
@@ -58,27 +58,26 @@ class Check_Node(Node):
         r_min = 0.03
         r_max = 0.530
 
-        # คำนวณระยะทางจากจุดที่รับมาว่าอยู่ในช่วงที่กำหนดหรือไม่
+
         distance_squared = self.x**2 + self.y**2 + (self.z-0.2)**2
 
         if self.can_do:
 
             if r_min**2 <= distance_squared <= r_max**2:
-                # สร้าง PoseStamped message และกำหนดค่า
+
                 msg = PoseStamped()
                 msg.header.stamp = self.get_clock().now().to_msg()
-                msg.header.frame_id = "link_0"  # กำหนด frame id ที่ต้องการ
+                msg.header.frame_id = "link_0"  
 
-                # กำหนดค่าตำแหน่ง
+
                 msg.pose.position.x = self.x
                 msg.pose.position.y = self.y
                 msg.pose.position.z = self.z
 
-                # ตั้งค่า orientation เป็นค่า default (ไม่มีการหมุน)
                 msg.pose.orientation.x = 0.0
                 msg.pose.orientation.y = 0.0
                 msg.pose.orientation.z = 0.0
-                msg.pose.orientation.w = 1.0  # ต้องเป็น 1.0 สำหรับ quaternion ที่ไม่หมุน
+                msg.pose.orientation.w = 1.0
 
                 self.pose_end_pub.publish(msg)
                 self.get_logger().info(f"Published target pose: x={self.x}, y={self.y}, z={self.z}")
@@ -89,7 +88,6 @@ class Check_Node(Node):
                     msg = Int64()
                     msg.data = 3
                     self.toggle_publisher.publish(msg)
-                    # self.mode = 0
 
 
 def main(args=None):
