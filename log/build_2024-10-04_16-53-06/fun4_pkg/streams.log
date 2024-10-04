@@ -1,0 +1,62 @@
+[0.007s] Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg -- -j20 -l20
+[0.043s] [100%] Built target cpp_node_test
+[0.046s] [100%] Built target ament_cmake_python_copy_fun4_pkg
+[0.180s] running egg_info
+[0.180s] writing fun4_pkg.egg-info/PKG-INFO
+[0.180s] writing dependency_links to fun4_pkg.egg-info/dependency_links.txt
+[0.180s] writing top-level names to fun4_pkg.egg-info/top_level.txt
+[0.181s] reading manifest file 'fun4_pkg.egg-info/SOURCES.txt'
+[0.181s] writing manifest file 'fun4_pkg.egg-info/SOURCES.txt'
+[0.198s] [100%] Built target ament_cmake_python_build_fun4_pkg_egg
+[0.205s] Invoked command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg -- -j20 -l20
+[0.230s] Invoking command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg
+[0.236s] -- Install configuration: ""
+[0.236s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/pythonpath.sh
+[0.236s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/pythonpath.dsv
+[0.237s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg-0.0.0-py3.10.egg-info
+[0.237s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.237s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[0.237s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[0.237s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.237s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg
+[0.237s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg/__init__.py
+[0.237s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg/dummy_module.py
+[0.262s] Listing '/home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/local/lib/python3.10/dist-packages/fun4_pkg'...
+[0.265s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/dummy_script.py
+[0.265s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/mode_service.py
+[0.265s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/check.py
+[0.265s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/random_target.py
+[0.265s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/jointstate.py
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/teleoperation.py
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/lib/fun4_pkg/cpp_node_test
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/config
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/config/display.rviz
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/launch
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/launch/simple_display.launch.py
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/launch/fun.launch.py
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes/link_0.stl
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes/end_effector.stl
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes/link_3.stl
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes/link_1.stl
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/meshes/link_2.stl
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/robot
+[0.266s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/robot/visual
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/robot/visual/my-robot.xacro
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/robot/visual/01-myfirst.urdf
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/ament_index/resource_index/package_run_dependencies/fun4_pkg
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/ament_index/resource_index/parent_prefix_path/fun4_pkg
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/ament_prefix_path.sh
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/ament_prefix_path.dsv
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/path.sh
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/environment/path.dsv
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/local_setup.bash
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/local_setup.sh
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/local_setup.zsh
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/local_setup.dsv
+[0.267s] -- Installing: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/package.dsv
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/ament_index/resource_index/packages/fun4_pkg
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/cmake/fun4_pkgConfig.cmake
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/cmake/fun4_pkgConfig-version.cmake
+[0.267s] -- Up-to-date: /home/itoon/Documents/GitHub/Fun4_RoboticDev/install/fun4_pkg/share/fun4_pkg/package.xml
+[0.268s] Invoked command in '/home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/itoon/Documents/GitHub/Fun4_RoboticDev/build/fun4_pkg

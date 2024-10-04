@@ -38,6 +38,9 @@ class JointstateNode(Node):
     def toggle_callback(self,msg : Int64):
         if msg.data == 21: # respect to base
             self.mode = 1
+            self.msg = JointState()
+            self.q = [0.2, 0.3, 0.4]
+            self.joint_pub.publish(self.msg)
             self.must_do = True
         elif msg.data == 22: # respect to end-effctor
             self.mode = 2 
