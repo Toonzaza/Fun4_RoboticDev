@@ -33,6 +33,13 @@ class JointstateNode(Node):
         self.p_dot = [0.0, 0.0, 0.0]
         self.singularity_thres = 0.000001
         self.diff = 0.0
+        
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        for i in range(len(self.q)):
+            msg.position.append(self.q[i])
+            msg.name.append(self.name[i])
+        self.joint_pub.publish(msg)
         # self.robot
 
     def toggle_callback(self,msg : Int64):
